@@ -1,0 +1,26 @@
+.social {
+    padding: 25px;
+    .social-wrap {
+        background: #fff;
+        border-radius: 50%;
+        margin: 20px auto;
+        opacity: 0.3;
+        padding: 22px;
+        height: 110px;
+        width: 110px;
+        &:hover {
+            background: #000;
+        }
+    }
+
+    .column {
+        text-align: center;
+    }
+
+    .fa {
+        color: $dark-green;
+    }
+
+    a {
+    }
+}
