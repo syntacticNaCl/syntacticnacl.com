@@ -46,16 +46,15 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-header > .column {
-  margin-bottom: 40px;
-  margin-top: 40px;
+header {
+  padding: 40px 0;
 }
 header a {
   border-bottom: 1px dotted green;
 }
 
 footer {
-  margin: 10px auto !important;
+  margin: 40px auto !important;
 }
 
 h1, h2, h3, h4, h5 {
