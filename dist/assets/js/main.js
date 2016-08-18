@@ -176,7 +176,7 @@ function showHelp(obj) {
     obj.echo("\t[[g;#c1e1a6;]contact]     get in touch"); 
     obj.echo("\t[[g;#c1e1a6;]github]      jump over to my github"); 
     obj.echo("\t[[g;#c1e1a6;]resume]      view my resume"); 
-    obj.echo("\t[[g;#c1e1a6;]skills]      my skills"); 
+    // obj.echo("\t[[g;#c1e1a6;]skills]      my skills"); 
     obj.echo("\t[[g;#c1e1a6;]email]       show email"); 
     obj.echo("\t[[g;#c1e1a6;]clear]       clear the console"); 
     obj.echo("\t[[g;#c1e1a6;]help]        this help screen");                        
