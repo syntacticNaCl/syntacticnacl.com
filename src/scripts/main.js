@@ -30,7 +30,7 @@ jQuery(function($){
             this.echo('I did software support for 3.5 years while I was in school. I then worked as a consultant and software engineer at Atcore Systems. I am currently employed as a developer for Sideways8 Interactive, LLC');
         },
         whoami: function() {
-            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games and building cool things. I am driven by a need to know how things work and why they work.');
+            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games and building cool things. I am driven by a need to know how and why things work.');
         },
         education: function() {
             this.echo('I hold Bachelors degrees in Computer Information Systems and Biopsychology');
@@ -62,9 +62,9 @@ jQuery(function($){
             this.echo('Hardware');
             this.echo('\t' + colorText('System76 Gazelle laptop'));
             this.echo('Environment');
-            this.echo('\t' + colorText('Switch between Fedora and Arch linux'));
+            this.echo('\t' + colorText('Switch between Fedora and Arch linux at home and OSX at work'));
             this.echo('\t' + colorText('Terminator using zsh'));
-            this.echo('\t' + colorText('Emacs using evil mode'));
+            this.echo('\t' + colorText('Emacs using evil mode for writing code'));
         },
         help: function() {
             showHelp(this);
@@ -82,38 +82,51 @@ jQuery(function($){
             this.echo("Opening resume...");
             window.open("files/resume.pdf","_self");
         },
-        skills: function(){
-            this.echo();
-            this.echo('Languages');
-            this.echo();
-            this.echo("\t" + colorText('PHP') + "                   " + colorLine('high'));
-            this.echo("\t" + colorText('CSS3') + "                  " + colorLine('high'));
-            this.echo("\t" + colorText('Sass') + "                  " + colorLine('high'));
-            this.echo("\t" + colorText('HTML5') + "                 " + colorLine('high'));
-            this.echo("\t" + colorText('JavaScript') + "            " + colorLine('high-medium'));
-            this.echo("\t" + colorText('MySQL') + "                 " + colorLine('high-medium'));
-            this.echo("\t" + colorText('MSSQL') + "                 " + colorLine('high-medium'));
-            this.echo("\t" + colorText('Python') + "                " + colorLine('medium'));
-            this.echo("\t" + colorText('Java') + "                  " + colorLine('medium-low'));
-            this.echo("\t" + colorText('C') + "                     " + colorLine('low'));
-            this.echo();
-            this.echo("Frameworks and Libraries");
-            this.echo();
-            this.echo("\t" + colorText('Laravel') + "               " + colorLine('high-medium'));
-            this.echo("\t" + colorText('jQuery') + "                " + colorLine('high'));
-            this.echo("\t" + colorText('Angular.js') + "            " + colorLine('high-medium'));
-            this.echo("\t" + colorText('SlimPHP') + "               " + colorLine('medium')); 
-            this.echo();
-            this.echo("Other");
-            this.echo();
-            this.echo("\t" + colorText('Linux') + "                 " + colorLine('high-medium'));
-            this.echo("\t" + colorText('Grunt/Gulp/Bower') + "      " + colorLine('high-medium'));
-            this.echo("\t" + colorText('VirtualBox') + "            " + colorLine('high-medium'));
-            this.echo("\t" + colorText('Vagrant') + "               " + colorLine('high-medium'));
-            this.echo();
+        github: function() {
+            this.echo("Opening github...");
+            window.open("https://github.com/syntacticnacl","_self");
         },
-
-
+        // skills: function(){
+        //     this.echo();
+        //     this.echo('Languages');
+        //     this.echo();
+        //     this.echo("\t" + colorText('PHP') + "                   " + colorLine('high'));
+        //     this.echo("\t" + colorText('CSS3') + "                  " + colorLine('high'));
+        //     this.echo("\t" + colorText('Sass/Less') + "             " + colorLine('high'));
+        //     this.echo("\t" + colorText('HTML5') + "                 " + colorLine('high'));
+        //     this.echo("\t" + colorText('JavaScript') + "            " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Python') + "                " + colorLine('medium'));
+        //     this.echo("\t" + colorText('Java') + "                  " + colorLine('medium-low'));
+        //     this.echo("\t" + colorText('Lisp') + "                  " + colorLine('medium-low'));
+        //     this.echo("\t" + colorText('Haskell') + "               " + colorLine('medium-low'));
+        //     this.echo("\t" + colorText('C++') + "                   " + colorLine('low'));
+        //     this.echo();
+        //     this.echo('Databases');
+        //     this.echo();
+        //     this.echo("\t" + colorText('MySQL') + "                 " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('MSSQL') + "                 " + colorLine('high-medium'));
+        //     this.echo();
+        //     this.echo("Frameworks and Libraries");
+        //     this.echo();
+        //     this.echo("\t" + colorText('Laravel') + "               " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('jQuery') + "                " + colorLine('high'));
+        //     this.echo("\t" + colorText('Angular.js') + "            " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Ember.js') + "              " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Node.js') + "               " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Doctrine') + "              " + colorLine('medium')); 
+        //     this.echo("\t" + colorText('SlimPHP') + "               " + colorLine('medium')); 
+        //     this.echo("\t" + colorText('Silex') + "                 " + colorLine('medium')); 
+        //     this.echo();
+        //     this.echo("Other");
+        //     this.echo();
+        //     this.echo("\t" + colorText('Linux') + "                 " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Grunt/Gulp/Bower') + "      " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('VirtualBox') + "            " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Vagrant') + "               " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Puppet') + "                " + colorLine('high-medium'));
+        //     this.echo("\t" + colorText('Jenkins') + "               " + colorLine('high-medium'));
+        //     this.echo();
+        // },
 
     }, {prompt:'[syntacticNaCl@dagobah]$ ', greetings: function(){this.echo('');}, tabcompletion: true});
        
@@ -161,10 +174,14 @@ function showHelp(obj) {
     obj.echo("\t[[g;#c1e1a6;]about]       about the terminal");
     obj.echo("\t[[g;#c1e1a6;]whoami]      display a short bio");
     obj.echo("\t[[g;#c1e1a6;]contact]     get in touch"); 
+    obj.echo("\t[[g;#c1e1a6;]github]      jump over to my github"); 
+    obj.echo("\t[[g;#c1e1a6;]resume]      view my resume"); 
+    obj.echo("\t[[g;#c1e1a6;]skills]      my skills"); 
     obj.echo("\t[[g;#c1e1a6;]email]       show email"); 
     obj.echo("\t[[g;#c1e1a6;]clear]       clear the console"); 
     obj.echo("\t[[g;#c1e1a6;]help]        this help screen");                        
     obj.echo("\t[[g;#c1e1a6;]work]        my work history");                        
+    obj.echo("\t[[g;#c1e1a6;]education]   my education");                        
     obj.echo("*Hint*Hint* try some unix commands too...");
     obj.echo("<tab> triggers autocompletion");
 }
@@ -184,7 +201,7 @@ function manPage(cmd) {
         return 'If you need to get in touch with me.';
         break;
     case 'github':
-        return 'My github link.';
+        return 'Navigates to my github profile.';
         break;
     case 'clear':
         return 'Clears the screen.';
@@ -193,11 +210,11 @@ function manPage(cmd) {
         return 'All of the available commands.';
         break;
     case 'resume':
-        return 'Link to my resume.';
+        return 'Navigates to my resume.';
         break;
-    case 'skills':
-        return 'My degree of skill';
-        break;
+    // case 'skills':
+    //     return 'My degree of skill';
+    //     break;
     case 'books':
         return 'Some of the many books I love.';
         break;
@@ -207,11 +224,11 @@ function manPage(cmd) {
     case 'work':
         return 'A little bit about my work history.';
         break;
-    case 'email':
-        return 'My email address.';
-        break;
+    // case 'email':
+    //     return 'My email address.';
+    //     break;
     case 'calc':
-        return 'Basic mathematical calculations.';
+        return 'Perform basic mathematical calculations.';
         break;
     default:
         return 'No manual entry for ' + cmd;
