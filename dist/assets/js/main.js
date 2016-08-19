@@ -27,19 +27,19 @@ jQuery(function($){
             this.echo('\tTwitter: ' + colorText('@syntacticNaCl'));
         },
         work: function() {
-            this.echo('I did software support for 3.5 years while I was in school. I then worked as a consultant and software engineer at Atcore Systems. I am currently employed as a developer for Sideways8 Interactive, LLC');
+            this.echo('I did software support for 3.5 years while I was in school. I then worked as a consultant and software engineer at Atcore Systems. I am currently employed as a developer for Sideways8 Interactive, LLC', {keepWords: true});
         },
         whoami: function() {
-            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games and building cool things. I am driven by a need to know how and why things work.');
+            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games and building cool things. I am driven by a need to know how and why things work.', {keepWords: true});
         },
         education: function() {
-            this.echo('I hold Bachelors degrees in Computer Information Systems and Biopsychology');
+            this.echo('I hold Bachelors degrees in Computer Information Systems and Biopsychology', {keepWords: true});
         },
         '\n': function() {
             this.echo();
         },
         passwd: function() {
-            this.echo('Uh uh uh... You didn\'t say the magic word!');
+            this.echo('Uh uh uh... You didn\'t say the magic word!', {keepWords: true});
         },
         pwd: function() {
             this.echo('/home/syntacticnacl/code/sites');
@@ -56,13 +56,13 @@ jQuery(function($){
             this.echo('\t' + colorText('The Hobbit'));
             this.echo('\t' + colorText('Area X: The Southern Reach Trilogy'));
             this.echo('\t' + colorText('The Library at Mount Char'));
-            this.echo('\t' + colorText('Most of the Star Wars Expanded Universe novels'));
+            this.echo('\t' + colorText('Most of the Star Wars Expanded Universe novels'), {keepWords: true});
         },
         tools: function() {
             this.echo('Hardware');
             this.echo('\t' + colorText('System76 Gazelle laptop'));
             this.echo('Environment');
-            this.echo('\t' + colorText('Switch between Fedora and Arch linux at home and OSX at work'));
+            this.echo('\t' + colorText('Switch between Fedora and Arch linux at home and OSX at work', {keepWords: true}));
             this.echo('\t' + colorText('Terminator using zsh'));
             this.echo('\t' + colorText('Emacs using evil mode for writing code'));
         },
@@ -76,7 +76,7 @@ jQuery(function($){
             this.echo(manPage(cmd));
         },
         about: function() {
-            this.echo('Built with ' + colorText('Jquery Terminal Emulator') + ' by ' + colorText('Jakub Jankiewicz') + ': http://terminal.jcubic.pl');
+            this.echo('Built with ' + colorText('Jquery Terminal Emulator') + ' by ' + colorText('Jakub Jankiewicz') + ': http://terminal.jcubic.pl', {keepWords: true});
         },
         resume: function() {
             this.echo("Opening resume...");
