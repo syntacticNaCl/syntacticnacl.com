@@ -1,1 +1,9 @@
-{}
+{
+    "eqeqeq": true,
+    "maxdepth": 2,
+    "maxparams": 3,
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "trailing": true
+}
