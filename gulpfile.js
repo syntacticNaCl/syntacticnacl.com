@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
 // adds prefixes for vendors for caniuse.com
     autoprefixer = require('gulp-autoprefixer'),
-    cssnano = require('gulp-cssnano'),
+    cleanCSS = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
@@ -24,7 +24,7 @@ function styles() {
     .pipe(concat('main.css'))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(notify({message: 'Styles task complete'}));
 }
@@ -49,7 +49,7 @@ function vendorStyles() {
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(notify({message: 'Vendor Styles task complete'}));
 }
