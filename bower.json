@@ -1,19 +1,20 @@
 {
-    "name" : "terminal site",
-    "moduleType": [
-        "node"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "devDependencies": {
-        "fontawesome": "~4.3.0",
-        "foundation": "~5.5.1",
-        "matchHeight": "~0.5.2"
-    }
+  "name": "terminal site",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fontawesome": "~4.3.0",
+    "foundation": "~5.5.1",
+    "matchHeight": "~0.5.2",
+    "jquery.terminal": "^2.8.0"
+  }
 }

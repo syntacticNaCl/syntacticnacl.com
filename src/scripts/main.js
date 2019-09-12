@@ -24,15 +24,16 @@ jQuery(function($){
         },
         contact: function() {
             this.echo('Contact me at:');
-            this.echo('\tEmail: garrettrappaport@gmail.com');
-            this.echo('\tLinkedin: https://www.linkedin.com/in/garrett-rappaport-507b332a');
+            this.echo('\tEmail: syntacticnacl@protonmail.ch');
             this.echo('\tTwitter: ' + colorText('@syntacticNaCl'));
+            this.echo('\tKeybase: ' + colorText('syntacticNaCl'));
+            this.echo('\tFreenode IRC: ' + colorText('syntacticNaCl'));
         },
         work: function() {
-            this.echo('I did software support for 3.5 years while I was in school. I then worked as a consultant and software engineer at Atcore Systems. I am currently employed as a developer for Sideways8 Interactive, LLC', {keepWords: true});
+            this.echo('I did software support for 3.5 years while I was in school. I then worked as a consultant and software engineer at Atcore Systems and Sideways8 Interactive, LLC. I am currently a Senior Software Engineer at ShootProof.', {keepWords: true});
         },
         whoami: function() {
-            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games and building cool things. I am driven by a need to know how and why things work.', {keepWords: true});
+            this.echo('Hi, my name is Garrett. I am a tinkerer, software developer, musician, gamer and Star Wars nerd. I enjoy reading Star Wars EU novels, playing table top games, and building cool things. I am driven by a need to know how and why things work.', {keepWords: true});
         },
         education: function() {
             this.echo('I hold Bachelors degrees in Computer Information Systems and Biopsychology', {keepWords: true});
@@ -46,7 +47,6 @@ jQuery(function($){
         pwd: function() {
             this.echo('/home/syntacticnacl/code/sites');
         },
-
         '': function() {
             this.echo();
         },
@@ -56,6 +56,7 @@ jQuery(function($){
             this.echo('\t' + colorText('Ender\s Game'));
             this.echo('\t' + colorText('The Lord of the Rings Trilogy'));
             this.echo('\t' + colorText('The Hobbit'));
+            this.echo('\t' + colorText('The Silmarillion'));
             this.echo('\t' + colorText('Area X: The Southern Reach Trilogy'));
             this.echo('\t' + colorText('The Library at Mount Char'));
             this.echo('\t' + colorText('Most of the Star Wars Expanded Universe novels'), {keepWords: true});
@@ -80,10 +81,6 @@ jQuery(function($){
         about: function() {
             this.echo('Built with ' + colorText('Jquery Terminal Emulator') + ' by ' + colorText('Jakub Jankiewicz') + ': http://terminal.jcubic.pl', {keepWords: true});
         },
-        resume: function() {
-            this.echo("Opening resume...");
-            window.open("files/resume.pdf","_self");
-        },
         github: function() {
             this.echo("Opening github...");
             window.open("https://github.com/syntacticnacl","_self");
@@ -93,10 +90,10 @@ jQuery(function($){
             this.echo('Languages');
             this.echo();
             this.echo("\t" + colorText('PHP') + "                   " + colorLine('high'));
-            this.echo("\t" + colorText('CSS3') + "                  " + colorLine('high'));
+            this.echo("\t" + colorText('Golang') + "                " + colorLine('high'));
             this.echo("\t" + colorText('Sass/Less') + "             " + colorLine('high'));
-            this.echo("\t" + colorText('HTML5') + "                 " + colorLine('high'));
-            this.echo("\t" + colorText('JavaScript') + "            " + colorLine('high-medium'));
+            this.echo("\t" + colorText('HTML/CSS') + "              " + colorLine('high'));
+            this.echo("\t" + colorText('JavaScript') + "            " + colorLine('high'));
             this.echo("\t" + colorText('Python') + "                " + colorLine('medium'));
             this.echo("\t" + colorText('Java') + "                  " + colorLine('medium-low'));
             this.echo("\t" + colorText('Lisp') + "                  " + colorLine('medium-low'));
@@ -114,7 +111,7 @@ jQuery(function($){
             this.echo("\t" + colorText('jQuery') + "                " + colorLine('high'));
             this.echo("\t" + colorText('Vue.js') + "                " + colorLine('high'));
             this.echo("\t" + colorText('Angular.js') + "            " + colorLine('high-medium'));
-            this.echo("\t" + colorText('Ember.js') + "              " + colorLine('medium'));
+            this.echo("\t" + colorText('React.js') + "              " + colorLine('high-medium'));
             this.echo("\t" + colorText('Node.js') + "               " + colorLine('high-medium'));
             this.echo("\t" + colorText('Doctrine') + "              " + colorLine('medium'));
             this.echo("\t" + colorText('SlimPHP') + "               " + colorLine('medium'));
@@ -180,7 +177,6 @@ function showHelp(obj) {
     obj.echo("\t[[g;#c1e1a6;]whoami]      display a short bio");
     obj.echo("\t[[g;#c1e1a6;]contact]     get in touch");
     obj.echo("\t[[g;#c1e1a6;]github]      jump over to my github");
-    obj.echo("\t[[g;#c1e1a6;]resume]      view my resume");
     obj.echo("\t[[g;#c1e1a6;]skills]      my skills");
     obj.echo("\t[[g;#c1e1a6;]books]       my favorite books");
     obj.echo("\t[[g;#c1e1a6;]clear]       clear the console");
@@ -214,9 +210,6 @@ function manPage(cmd) {
     case 'help':
         return 'All of the available commands.';
         break;
-    case 'resume':
-        return 'Navigates to my resume.';
-        break;
     case 'skills':
         return 'My degree of skill';
         break;
@@ -235,6 +228,5 @@ function manPage(cmd) {
     default:
         return 'No manual entry for ' + cmd;
         break;
-
     }
 }
