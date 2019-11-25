@@ -24,7 +24,7 @@ jQuery(function($){
         },
         contact: function() {
             this.echo('Contact me at:');
-            this.echo('\tEmail: syntacticnacl@protonmail.ch');
+            this.echo('\tEmail: garrett@syntacticnacl.com');
             this.echo('\tTwitter: ' + colorText('@syntacticNaCl'));
             this.echo('\tKeybase: ' + colorText('syntacticNaCl'));
             this.echo('\tFreenode IRC: ' + colorText('syntacticNaCl'));
